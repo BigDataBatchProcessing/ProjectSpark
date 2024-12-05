@@ -45,11 +45,11 @@ Do ich określenia służy poniższy wzór:
 shuffleReadBytes + shuffleWriteBytes + inputBytes
 ```
 
-4 pkt - wartość nie większa niż wartość odniesienia 
-3 pkt - wartość nie większa niż dwukrotność wartości odniesienia 
-2 pkt - wartość nie większa niż czterokrotność wartości odniesienia
-1 pkt - wartość nie większa niż ośmiokrotność wartości odniesienia
-0 pkt - wartość większa niż ośmiokrotność wartości odniesienia
+- 4 pkt - wartość nie większa niż wartość odniesienia 
+- 3 pkt - wartość nie większa niż dwukrotność wartości odniesienia 
+- 2 pkt - wartość nie większa niż czterokrotność wartości odniesienia
+- 1 pkt - wartość nie większa niż ośmiokrotność wartości odniesienia
+- 0 pkt - wartość większa niż ośmiokrotność wartości odniesienia
 
 ***Wartością odniesienia jest wartość najlepszego uzyskanego wyniku pomnożona razy 2***
 
