@@ -37,7 +37,7 @@ Wybrane najczęstsze przykłady braku czystości:
 
 ### Punkty za wysoką wydajność rozwiązania 
 
-Punkty za wysoką wydajność rozwiązania wynikają z metryk przetwarzania. 
+Punkty za wysoką wydajność rozwiązania wynikają z metryk przetwarzania i możliwe są tylko w przypadku w pełni poprawnych rozwiązań (ocenionych na 6 punktów).
 
 Do ich określenia służy poniższy wzór:
 
