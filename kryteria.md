@@ -1,0 +1,99 @@
+# Kryteria oceny
+
+## Wprowadzenie 
+
+Projekt dla każdego z API wymaga implementacji obejmującej:
+
+* albo misję główną - wymagającą dokonywania złożonego przetwarzania danych
+* albo misje poboczne - dwa zadania o znacznie mniejszym poziomie złożoności 
+
+
+## Kryteria misji głównej 
+
+Za implementację misji głównej dla każdego z API można otrzymać: 
+* 6 punktów za poprawne rozwiązanie 
+* 4 punkty za wysoką wydajność rozwiązania 
+
+
+### Ocena poprawnego rozwiązania 
+
+Ocena poprawnego rozwiązania dokonywana jest na podstawie następujących zasad:
+- brak implementacji lub implementacja nie działająca - 0 pkt.
+- brak zachowania czystości API - 1 pkt. "za dobre chęci" 
+- zachowana czystość API, wynik odmienny od sugerowanego (akceptowanego) - 2 pkt.
+- zachowana czystość API, wynik w pełni zgodny z sugerowanym - 6 pkt. 
+
+Przez brak czystości rozumiemy dowolny fragment przetwarzania począwszy od zdefiniowania źródeł danych z użyciem właściwego kontekstu, aż do uzyskania końcowego wyniku
+- zapisania go do miejsca docelowego - w przypadku RDD API oraz DataFrame API
+- pobrania do lokalnej zmiennej (Dataset API, Pandas API on Spark) celem utworzenia lokalnego pliku JSON
+
+Wybrane przykłady braku czystości:
+- w `RDD API` skorzystanie z funkcjonalności DataFrame API podczas utworzenia źródła
+- w `Dataset API` skorzystanie z dowolnej z metod *Untyped transformations* (https://spark.apache.org/docs/latest/api/scala/org/apache/spark/sql/Dataset.html) 
+- w `Pandas API on Spark` skorzystanie z `Pandas API`
+
+### Punkty za wysoką wydajność rozwiązania 
+
+Punkty za wysoką wydajność rozwiązania wynikają z metryk przetwarzania. 
+
+Do ich określenia służy poniższy wzór:
+
+```
+shuffleReadBytes + shuffleWriteBytes + inputBytes
+```
+
+4 pkt - wartość nie większa niż wartość odniesienia 
+3 pkt - wartość nie większa niż dwukrotność wartości odniesienia 
+2 pkt - wartość nie większa niż czterokrotność wartości odniesienia
+1 pkt - wartość nie większa niż ośmiokrotność wartości odniesienia
+0 pkt - wartość większa niż ośmiokrotność wartości odniesienia
+
+Wartością odniesienia jest wartość najlepszego uzyskanego wyniku pomnożona razy 2 
+
+Po zakończonym projekcie wartości te zostaną wpisane (o ile będą dostępne) do poniższych tabel
+
+#### Python
+
+| Zestaw                           | RDD API    | DataFrame API  | Pandas API on Spark  |
+|----------------------------------|------------|----------------|----------------------|
+| Zestaw 1 - imdb-genres           | Dane 1-2   | Dane 1-3       | Dane 1-4   |
+| Zestaw 2 - nyc-taxi              | Dane 2-2   | Dane 2-3       | Dane 2-4   |
+| Zestaw 3 - myc-accidents         | Dane 3-2   | Dane 3-3       | Dane 3-4   |
+| Zestaw 4 - imdb-persons          | Dane 4-2   | Dane 4-3       | Dane 4-4   |
+| Zestaw 5 - netflix-prize-data    | Dane 5-2   | Dane 5-3       | Dane 5-4   |
+| Zestaw 6 - fifa-players          | Dane 6-2   | Dane 6-3       | Dane 6-4   |
+| Zestaw 7 - carstrucks-data       | Dane 7-2   | Dane 7-3       | Dane 7-4   |
+| Zestaw 8 - flights-data          | Dane 8-2   | Dane 8-3       | Dane 8-4   |
+| Zestaw 9 - discogs-data          | Dane 9-2   | Dane 9-3       | Dane 9-4   |
+| Zestaw 10 - google-paystore-apps | Dane 10-2  | Dane 10-3      | Dane 10-4  |
+
+#### Scala
+
+| Zestaw                           | RDD API    | DataFrame API  | Dataset API  |
+|----------------------------------|------------|----------------|--------------|
+| Zestaw 1 - imdb-genres           | Dane 1-2   | Dane 1-3       | Dane 1-4   |
+| Zestaw 2 - nyc-taxi              | Dane 2-2   | Dane 2-3       | Dane 2-4   |
+| Zestaw 3 - myc-accidents         | Dane 3-2   | Dane 3-3       | Dane 3-4   |
+| Zestaw 4 - imdb-persons          | Dane 4-2   | Dane 4-3       | Dane 4-4   |
+| Zestaw 5 - netflix-prize-data    | Dane 5-2   | Dane 5-3       | Dane 5-4   |
+| Zestaw 6 - fifa-players          | Dane 6-2   | Dane 6-3       | Dane 6-4   |
+| Zestaw 7 - carstrucks-data       | Dane 7-2   | Dane 7-3       | Dane 7-4   |
+| Zestaw 8 - flights-data          | Dane 8-2   | Dane 8-3       | Dane 8-4   |
+| Zestaw 9 - discogs-data          | Dane 9-2   | Dane 9-3       | Dane 9-4   |
+| Zestaw 10 - google-paystore-apps | Dane 10-2  | Dane 10-3      | Dane 10-4  |
+
+
+## Kryteria misji pobocznych 
+
+Za obie misje poboczne, dla każdego API można otrzymać 5 punktów 
+
+Przy czym, maksymalna liczba punktów za każdą z misji jest następująca:
+- 2 pkt - za misję 1 
+- 3 pkt - za misję 2  
+
+Jeśli którekolwiek z rozwiązań nie zachowuje czystości kodu wówczas za oba rozwiązania należy się co najwyżej 1 pkt (za dobre chęci) 
+
+Ocena za każdą misję jest uznaniowa od 0 - sytuacja ekstremalna, niedziałający kod, lub rozwiązanie znacząco odbiegające od poprawnego do maksymalnej liczby punktów w przypadku rozwiązania w pełni poprawnego. 
+
+Ocena obu misji poprawności polega na analizie kodu oraz faktu jego działania. 
+
