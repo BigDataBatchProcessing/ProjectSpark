@@ -15,3 +15,5 @@ Poniżej znajdują się linki prowadzące do opisu celu przetwarzania dla poszcz
 * [Zestaw 9 - discogs](Zestaw%209%20-%20discogs/README.md)
 * [Zestaw 10 - google-playstore-apps](Zestaw%2010%20-%20google-playstore-apps/README.md)
 
+
+
