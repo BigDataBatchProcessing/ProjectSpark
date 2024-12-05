@@ -36,7 +36,7 @@ Uwagi:
 
 ### Misja 1
 
-Wyznacz trzy dni, w których liczba przejazdów była największa. Dla każdego z dni wyznacz: dzień w formacie YYYY-MM-DD, liczbę przejazdów, liczbę pasażerów, sumaryczną długość przejazdów. Pomiń w obliczeniach te przejazdy, które odbyły się bez opłat (Payment_type=3) oraz te, które zostały anulowane (Payment_type=6)
+Wyznacz trzy dni, w których liczba rozpoczętych przejazdów była największa. Dla każdego z dni wyznacz: dzień w formacie YYYY-MM-DD, liczbę przejazdów, liczbę pasażerów, sumaryczną długość przejazdów. Pomiń w obliczeniach te przejazdy, które odbyły się bez opłat (Payment_type=3) oraz te, które zostały anulowane (Payment_type=6)
 
 Wynik ma zawierać kolumny:
 
