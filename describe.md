@@ -1,6 +1,10 @@
 
 Poniżej znajdą Państwo wyniki metody `describe` na źródłowych zbiorach danych wykorzystywanych w ramach projektu. 
 
+```
+dataFrame.describe().show()
+```
+
 Dzięki nim możecie się Państwo upewnić, że działamy na tych samych zbiorach danych. 
 Może to być przydatne w sytuacji, gdy otrzymujecie Państwa wyniki dla misji głównych odmienne od sugerowanych i potrzebujecie wyeliminować jedną z potencjalnych przyczyn.
 

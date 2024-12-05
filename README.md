@@ -1,5 +1,11 @@
 # ProjectSpark
 
+## Opis projektu 
+
+Opis projektu znajduje się na stronie kursu w odpowiadającej mu sekcji. 
+
+## Cel przetwarzania 
+
 W ramach projektu ***Spark*** każda osoba ma przyporządkowany zestaw danych, z którego wynika cel przetwarzania 
 
 Poniżej znajdują się linki prowadzące do opisu celu przetwarzania dla poszczególnych zestawów danych
@@ -15,5 +21,17 @@ Poniżej znajdują się linki prowadzące do opisu celu przetwarzania dla poszcz
 * [Zestaw 9 - discogs](Zestaw%209%20-%20discogs/README.md)
 * [Zestaw 10 - google-playstore-apps](Zestaw%2010%20-%20google-playstore-apps/README.md)
 
+
+## Sugerowane wyniki 
+
+Ocena rozwiązań misji głównych projektów, między innymi ze względu na ich złożoność będzie oparta na czystości kodu oraz uzyskiwanych wynikach. 
+
+Sugerowane wyniki są dostępne [tutaj](sugerowane-wyniki.md)
+
+## Weryfikacja danych źródłowych 
+
+Jedną z przyczyn uzyskiwania innych wyników niż sugerowane są różnice w danych źródłowych. ABy to wykluczyć, należy korzystać ze źródeł pochodzących tylko i wyłącznie ze wskazanego na stronie kursu miejsca. 
+
+Dodatkowo można sprawdzić sobie kilka kluczowych statystyk poszczególnych atrybutów za pomocą [tej strony](describe.md)
 
 
