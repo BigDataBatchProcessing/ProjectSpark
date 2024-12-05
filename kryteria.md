@@ -98,7 +98,9 @@ Przy czym, maksymalna liczba punktów za każdą z misji jest następująca:
 
 Jeśli którekolwiek z rozwiązań nie zachowuje czystości kodu wówczas za oba (razem) rozwiązania należy się co najwyżej 1 pkt (za dobre chęci) 
 
-Ocena za każdą misję jest uznaniowa. Od 0 - sytuacja ekstremalna, niedziałający kod, lub rozwiązanie znacząco odbiegające od poprawnego do maksymalnej liczby punktów dla danej misji w przypadku rozwiązania w pełni poprawnego. 
+Ocena za każdą misję jest uznaniowa 
+- od 0 - sytuacja ekstremalna, niedziałający kod, lub rozwiązanie znacząco odbiegające od poprawnego, 
+- do maksymalnej liczby punktów dla danej misji w przypadku rozwiązania w pełni poprawnego. 
 
 Ocena obu misji poprawności polega na analizie kodu oraz faktu jego działania. 
 
