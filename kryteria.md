@@ -45,6 +45,8 @@ Do ich określenia służy poniższy wzór:
 shuffleReadBytes + shuffleWriteBytes + inputBytes
 ```
 
+Liczba punktów wynika z wartości wyznaczanej przez powyższy wzór zgodnie z poniższymi zasadami:
+
 - 4 pkt - wartość nie większa niż wartość odniesienia 
 - 3 pkt - wartość nie większa niż dwukrotność wartości odniesienia 
 - 2 pkt - wartość nie większa niż czterokrotność wartości odniesienia
