@@ -4,11 +4,11 @@
 
 Projekt dla każdego z API wymaga implementacji obejmującej:
 
-* albo misję główną - wymagającą dokonywania złożonego przetwarzania danych
-* albo misje poboczne - dwa zadania o znacznie mniejszym poziomie złożoności 
+* albo **misję główną** - wymagającą dokonywania złożonego przetwarzania danych
+* albo **dwie misje poboczne** - dwa zadania o znacznie mniejszym poziomie złożoności 
 
 
-## Kryteria misji głównej 
+## Kryteria oceny dla misji głównej 
 
 Za implementację misji głównej dla każdego z API można otrzymać: 
 * 6 punktów za poprawne rozwiązanie 
@@ -18,19 +18,22 @@ Za implementację misji głównej dla każdego z API można otrzymać:
 ### Ocena poprawnego rozwiązania 
 
 Ocena poprawnego rozwiązania dokonywana jest na podstawie następujących zasad:
-- brak implementacji lub implementacja nie działająca - 0 pkt.
-- brak zachowania czystości API - 1 pkt. "za dobre chęci" 
-- zachowana czystość API, wynik odmienny od sugerowanego (akceptowanego) - 2 pkt.
-- zachowana czystość API, wynik w pełni zgodny z sugerowanym - 6 pkt. 
+- 0 pkt - brak implementacji lub implementacja nie działająca
+- 1 pkt - brak zachowania czystości API - "za dobre chęci" 
+- 2 pkt - zachowana czystość API, wynik odmienny od sugerowanego (akceptowanego)
+- 6 pkt - zachowana czystość API, wynik w pełni zgodny z sugerowanym 
 
-Przez brak czystości rozumiemy dowolny fragment przetwarzania począwszy od zdefiniowania źródeł danych z użyciem właściwego kontekstu, aż do uzyskania końcowego wyniku
-- zapisania go do miejsca docelowego - w przypadku RDD API oraz DataFrame API
-- pobrania do lokalnej zmiennej (Dataset API, Pandas API on Spark) celem utworzenia lokalnego pliku JSON
+Przez brak czystości rozumiemy dowolny fragment przetwarzania wykraczający poza wyznaczone API 
+- począwszy od zdefiniowania źródeł danych z użyciem właściwego kontekstu, 
+- aż do uzyskania końcowego wyniku czyli
+    - zapisania go do miejsca docelowego - w przypadku *RDD API* oraz *DataFrame API*
+    - pobrania do lokalnej zmiennej (*Dataset API*, *Pandas API on Spark*) celem utworzenia lokalnego pliku JSON
 
-Wybrane przykłady braku czystości:
-- w `RDD API` skorzystanie z funkcjonalności DataFrame API podczas utworzenia źródła
-- w `Dataset API` skorzystanie z dowolnej z metod *Untyped transformations* (https://spark.apache.org/docs/latest/api/scala/org/apache/spark/sql/Dataset.html) 
-- w `Pandas API on Spark` skorzystanie z `Pandas API`
+
+Wybrane najczęstsze przykłady braku czystości:
+- w *RDD API* skorzystanie z funkcjonalności *DataFrame API* podczas utworzenia źródła
+- w *Dataset API* skorzystanie z dowolnej z metod *Untyped transformations* (https://spark.apache.org/docs/latest/api/scala/org/apache/spark/sql/Dataset.html) 
+- w *Pandas API on Spark* skorzystanie z *Pandas API*
 
 ### Punkty za wysoką wydajność rozwiązania 
 
@@ -48,7 +51,9 @@ shuffleReadBytes + shuffleWriteBytes + inputBytes
 1 pkt - wartość nie większa niż ośmiokrotność wartości odniesienia
 0 pkt - wartość większa niż ośmiokrotność wartości odniesienia
 
-Wartością odniesienia jest wartość najlepszego uzyskanego wyniku pomnożona razy 2 
+***Wartością odniesienia jest wartość najlepszego uzyskanego wyniku pomnożona razy 2***
+
+Wartości odniesienia są oczywiście są określane (są różne) dla każdego API i każdego zestawu.
 
 Po zakończonym projekcie wartości te zostaną wpisane (o ile będą dostępne) do poniższych tabel
 
@@ -83,17 +88,17 @@ Po zakończonym projekcie wartości te zostaną wpisane (o ile będą dostępne)
 | Zestaw 10 - google-paystore-apps | Dane 10-2  | Dane 10-3      | Dane 10-4  |
 
 
-## Kryteria misji pobocznych 
+## Kryteria oceny dla misji pobocznych 
 
-Za obie misje poboczne, dla każdego API można otrzymać 5 punktów 
+Za obie misje poboczne, dla każdego API można otrzymać maksymalnie 5 punktów.
 
 Przy czym, maksymalna liczba punktów za każdą z misji jest następująca:
 - 2 pkt - za misję 1 
 - 3 pkt - za misję 2  
 
-Jeśli którekolwiek z rozwiązań nie zachowuje czystości kodu wówczas za oba rozwiązania należy się co najwyżej 1 pkt (za dobre chęci) 
+Jeśli którekolwiek z rozwiązań nie zachowuje czystości kodu wówczas za oba (razem) rozwiązania należy się co najwyżej 1 pkt (za dobre chęci) 
 
-Ocena za każdą misję jest uznaniowa od 0 - sytuacja ekstremalna, niedziałający kod, lub rozwiązanie znacząco odbiegające od poprawnego do maksymalnej liczby punktów w przypadku rozwiązania w pełni poprawnego. 
+Ocena za każdą misję jest uznaniowa. Od 0 - sytuacja ekstremalna, niedziałający kod, lub rozwiązanie znacząco odbiegające od poprawnego do maksymalnej liczby punktów dla danej misji w przypadku rozwiązania w pełni poprawnego. 
 
 Ocena obu misji poprawności polega na analizie kodu oraz faktu jego działania. 
 
