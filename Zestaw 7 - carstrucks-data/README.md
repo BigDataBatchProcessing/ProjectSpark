@@ -53,10 +53,10 @@ Wynik ma zawierać następujące kolumny:
 - `diesel_ratio` – stosunek liczby samochodów zasilanych olejem napędowym do całkowitej liczby samochodów
 
 ### Misja 2 
-Dla każdego stanu wyznacz liczbę regionów, w których liczba oferowanych samochodów z automatyczną skrzynią biegów przekraczała 50%. Ponadto oblicz średnią cenę oferowanych w tych regionach samochodów oraz ich liczbę. Nie uwzględniaj samochodów, których status (title_status) jest inny niż clean. 
+Dla każdego stanu wyznacz liczbę regionów, w których liczba oferowanych samochodów z automatyczną skrzynią biegów przekraczała 50%. Ponadto oblicz średnią cenę oferowanych w tych regionach samochodów oraz ich liczbę. Nie uwzględniaj samochodów, których status (`title_status`) jest inny niż `clean`. 
 
 Wynik ma zawierać następujące kolumny:
-- `state` – nazwa stanów 
+- `state` – nazwa stanu 
 - `regions` – liczba regionów
 - `price_avg` – średnia cena samochodów 
 - `cars` – liczba samochodów
