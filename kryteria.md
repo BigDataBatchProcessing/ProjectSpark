@@ -21,7 +21,8 @@ Ocena poprawnego rozwiązania dokonywana jest na podstawie następujących zasad
 - 0 pkt - brak implementacji lub implementacja nie działająca
 - 1 pkt - brak zachowania czystości API - "za dobre chęci" 
 - 2 pkt - zachowana czystość API, wynik odmienny od sugerowanego (akceptowanego)
-- 6 pkt - zachowana czystość API, wynik w pełni zgodny z sugerowanym 
+- 5 pkt - zachowana czystość API, wynik w pełni zgodny z sugerowanym, niepoprawne miejsce docelowe 
+- 6 pkt - zachowana czystość API, wynik w pełni zgodny z sugerowanym, poprawne miejsce docelowe
 
 Przez brak czystości rozumiemy dowolny fragment przetwarzania wykraczający poza wyznaczone API 
 - począwszy od zdefiniowania źródeł danych z użyciem właściwego kontekstu, 
@@ -29,11 +30,14 @@ Przez brak czystości rozumiemy dowolny fragment przetwarzania wykraczający poz
     - zapisania go do miejsca docelowego - w przypadku *RDD API* oraz *DataFrame API*
     - pobrania do lokalnej zmiennej (*Dataset API*, *Pandas API on Spark*) celem utworzenia lokalnego pliku JSON
 
-
 Wybrane najczęstsze przykłady braku czystości:
 - w *RDD API* skorzystanie z funkcjonalności *DataFrame API* podczas utworzenia źródła
 - w *Dataset API* skorzystanie z dowolnej z metod *Untyped transformations* (https://spark.apache.org/docs/latest/api/scala/org/apache/spark/sql/Dataset.html) 
-- w *Pandas API on Spark* skorzystanie z *Pandas API*
+- w *Pandas API on Spark* skorzystanie z *Pandas API*.
+
+Niepoprawne miejsce docelowe zwykle odnosi się do *DataFrame API*. Przykładowo, nie każda tabela zapisywana przez Apache Spark jest tabelą *Delta Lake*. 
+
+Czasami ten sam problem dotyczy *Dataset API*/*Pandas API on Spark* - plik JSON lub katalog z plikami JSON w HDFS nie jest oczywiście lokalnym plikiem JSON. Przez lokalny plik JSON rozumiemy plik w lokalnym systemie plików (np. serwera master klastra).
 
 ### Punkty za wysoką wydajność rozwiązania 
 
@@ -55,9 +59,9 @@ Liczba punktów wynika z wartości wyznaczanej przez powyższy wzór zgodnie z p
 
 ***Wartością odniesienia jest wartość najlepszego uzyskanego wyniku pomnożona razy 2***
 
-Wartości odniesienia są oczywiście są określane (są różne) dla każdego API i każdego zestawu.
+Wartości odniesienia oczywiście są określane (są różne) dla każdego API i każdego zestawu.
 
-Po zakończonym projekcie wartości te zostaną wpisane (o ile będą dostępne) do poniższych tabel
+Po zakończonym projekcie wartości te zostaną wpisane (o ile będą dostępne) do poniższych tabel.
 
 #### Python
 
