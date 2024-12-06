@@ -28,6 +28,7 @@ root
 Uwagi
 - Przez profesje rozumiemy wartości występujące jako rozdzielane przecinkami składowe w `primaryProfession` wyłączając z nich wartość `"miscellaneous"`
 - Poziom popularności profesji wyznaczany jest wyznaczany jest na podstawie tego ile osób posiada daną profesję na swojej liście profesji w `primaryProfession`
+- Podczas porównywania roli osoby w filmie z jej podstawowymi profesjami sprawdzamy czy są one równe (bez semantycznych dodatkowych interpretacji np. traktujących rolę `self` jako profesję `actor` itp.)
  
 ## Misje poboczne 
 
