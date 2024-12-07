@@ -33,6 +33,7 @@ root
 Uwagi:
 - lista linii lotniczych nie może zawierać duplikatów 
 - lista linii lotniczych powinna uwzględniać tylko przyloty ujęte w obliczeniach (bez anulowanych) 
+- wyznaczanie stanów uwzględnianych w rankingach wymaga uwzględnienia wszystkich lotów, niezależnie od ich anulowania czy innych atrybutów
 
  
 ## Misje poboczne 
