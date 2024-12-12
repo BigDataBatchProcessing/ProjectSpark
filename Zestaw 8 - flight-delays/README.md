@@ -6,7 +6,7 @@
 
 Dla każdego miesiąca i roku należy wyznaczyć stan o największym średnim opóźnieniu przylotów (pozostałe miary, które należy wyliczyć są wymienione w opisie wyniku przetwarzania). Podczas obliczeń należy pominąć loty odwołane. Podczas obliczeń należy wyeliminować wpływ przylotów wykonanych przed czasem, takie przyloty należy traktować jako wykonane bez opóźnień (opóźnienie zerowe). Przy obliczaniu opóźnień przylotów należy uwzględniać tylko wartości w `ARRIVAL_DELAY`. 
 
-W rankingach mają być brane pod uwagę tylko takie stany, dla których całkowita liczba lądowań jest powyżej średniej liczby lądowań dla wszystkich stanów. 
+W rankingach mają być brane pod uwagę tylko takie stany, dla których całkowita liczba lotów z miejscem docelowym w tych stanach jest powyżej średniej liczby lotów dla wszystkich stanów. 
 
 Ostateczny wynik przetwarzania powinien zawierać następujące atrybuty: 
 - `year` – rok
