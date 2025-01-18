@@ -80,18 +80,18 @@ Wartości odniesienia oczywiście są określane (są różne) dla każdego API 
 
 ##### Scala
 
-| Zestaw                           | RDD API    | DataFrame API  | Dataset API  |
-|----------------------------------|------------|----------------|--------------|
-| Zestaw 1 - imdb-genres           | Dane 1-2   | Dane 1-3       | Dane 1-4   |
-| Zestaw 2 - nyc-taxi              | Dane 2-2   | Dane 2-3       | Dane 2-4   |
-| Zestaw 3 - myc-accidents         | Dane 3-2   | Dane 3-3       | Dane 3-4   |
-| Zestaw 4 - imdb-persons          | Dane 4-2   | Dane 4-3       | Dane 4-4   |
-| Zestaw 5 - netflix-prize-data    | Dane 5-2   | Dane 5-3       | Dane 5-4   |
-| Zestaw 6 - fifa-players          | Dane 6-2   | Dane 6-3       | Dane 6-4   |
-| Zestaw 7 - carstrucks-data       | Dane 7-2   | Dane 7-3       | Dane 7-4   |
-| Zestaw 8 - flights-data          | Dane 8-2   | Dane 8-3       | Dane 8-4   |
-| Zestaw 9 - discogs-data          | Dane 9-2   | Dane 9-3       | Dane 9-4   |
-| Zestaw 10 - google-paystore-apps | Dane 10-2  | Dane 10-3      | Dane 10-4  |
+|Nazwa_zestawu                    |Spark Core (RDD) |Spark SQL (DataFrame) |Spark SQL (Dataset) |
+|---------------------------------|----------------:|---------------------:|-------------------:|
+|Zestaw 1 – imdb-genres           |   3,464,396,531 |                 NULL |               NULL |
+|Zestaw 2 - nyc-taxi              |      Dane 2-2   |       Dane 2-3       |         Dane 2-4   |
+|Zestaw 3 – nyc-accidents         |            NULL |        1,684,193,611 |      1,023,399,247 |
+|Zestaw 4 – imdb-persons          |  10,023,015,074 |        8,457,482,128 |               NULL |
+|Zestaw 6 – fifa-players          |      78,858,254 |          142,110,787 |         84,079,786 |
+|Zestaw 7 - carstrucks-data       |      Dane 7-2   |       Dane 7-3       |         Dane 7-4   |
+|Zestaw 8 – flight-delays         |   1,136,981,371 |        4,918,699,843 |      2,486,431,666 |
+|Zestaw 9 - discogs-data          |      Dane 9-2   |       Dane 9-3       |         Dane 9-4   |
+|Zestaw 10 - google-paystore-apps |      Dane 10-2  |       Dane 10-3      |         Dane 10-4  |
+
 
 
 ## Kryteria oceny dla misji pobocznych 
