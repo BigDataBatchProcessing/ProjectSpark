@@ -108,5 +108,5 @@ Ocena za każdą misję jest uznaniowa
 - od 0 - sytuacja ekstremalna, niedziałający kod, lub rozwiązanie znacząco odbiegające od poprawnego, 
 - do maksymalnej liczby punktów dla danej misji w przypadku rozwiązania w pełni poprawnego. 
 
-Ocena obu misji poprawności polega na analizie kodu oraz faktu jego działania. 
+Ocena poprawności obu misji polega na analizie kodu oraz faktu jego działania. 
 
