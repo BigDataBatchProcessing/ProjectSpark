@@ -61,24 +61,24 @@ Liczba punktów wynika z wartości wyznaczanej przez powyższy wzór zgodnie z p
 
 Wartości odniesienia oczywiście są określane (są różne) dla każdego API i każdego zestawu.
 
-Po zakończonym projekcie wartości te zostaną wpisane (o ile będą dostępne) do poniższych tabel.
+#### Najlepsze wyniki 
 
-#### Python
+##### Python
 
-| Zestaw                           | RDD API    | DataFrame API  | Pandas API on Spark  |
-|----------------------------------|------------|----------------|----------------------|
-| Zestaw 1 - imdb-genres           | Dane 1-2   | Dane 1-3       | Dane 1-4   |
-| Zestaw 2 - nyc-taxi              | Dane 2-2   | Dane 2-3       | Dane 2-4   |
-| Zestaw 3 - myc-accidents         | Dane 3-2   | Dane 3-3       | Dane 3-4   |
-| Zestaw 4 - imdb-persons          | Dane 4-2   | Dane 4-3       | Dane 4-4   |
-| Zestaw 5 - netflix-prize-data    | Dane 5-2   | Dane 5-3       | Dane 5-4   |
-| Zestaw 6 - fifa-players          | Dane 6-2   | Dane 6-3       | Dane 6-4   |
-| Zestaw 7 - carstrucks-data       | Dane 7-2   | Dane 7-3       | Dane 7-4   |
-| Zestaw 8 - flights-data          | Dane 8-2   | Dane 8-3       | Dane 8-4   |
-| Zestaw 9 - discogs-data          | Dane 9-2   | Dane 9-3       | Dane 9-4   |
-| Zestaw 10 - google-paystore-apps | Dane 10-2  | Dane 10-3      | Dane 10-4  |
+|Zestaw                           |Spark Core (RDD) |Spark SQL (DataFrame) |Pandas API on Spark |
+|---------------------------------|----------------:|---------------------:|-------------------:|
+|Zestaw 1 – imdb-genres           |   2,870,007,557 |        3,579,241,383 |      6,703,079,169 |
+|Zestaw 2 – nyc-taxi              |   1,566,758,042 |        4,274,941,722 |      3,490,888,005 |
+|Zestaw 3 – nyc-accidents         |     316,570,024 |          692,511,476 |      3,201,067,288 |
+|Zestaw 4 – imdb-persons          |   4,858,225,869 |        6,051,322,783 |     14,234,179,376 |
+|Zestaw 6 – fifa-players          |      51,049,470 |          192,387,830 |        630,129,140 |
+|Zestaw 7 – carstrucks-data       |     103,477,904 |          337,395,846 |      1,040,571,615 |
+|Zestaw 8 – flight-delays         |     632,588,852 |        1,191,963,494 |      2,383,908,271 |
+|Zestaw 9 – discogs               |     982,114,075 |        2,099,330,761 |      3,398,451,443 |
+|Zestaw 10 – google-playstore-apps|     732,019,809 |        1,295,625,331 |      2,643,834,438 |
 
-#### Scala
+
+##### Scala
 
 | Zestaw                           | RDD API    | DataFrame API  | Dataset API  |
 |----------------------------------|------------|----------------|--------------|
