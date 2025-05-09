@@ -80,7 +80,7 @@ Wartości odniesienia oczywiście są określane (są różne) dla każdego API 
 
 ##### Scala
 
-|Nazwa_zestawu                    |Spark Core (RDD) |Spark SQL (DataFrame) |Spark SQL (Dataset) |
+|Zestaw                           |Spark Core (RDD) |Spark SQL (DataFrame) |Spark SQL (Dataset) |
 |---------------------------------|----------------:|---------------------:|-------------------:|
 |Zestaw 1 – imdb-genres           |   3,464,396,531 |                 NULL |               NULL |
 |Zestaw 2 - nyc-taxi              |      Dane 2-2   |       Dane 2-3       |         Dane 2-4   |
